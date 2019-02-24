@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.ads": "2.0.8",
     "com.unity.cinemachine": "2.2.8",
     "com.unity.collab-proxy": "1.2.15",
     "com.unity.package-manager-ui": "2.0.3",

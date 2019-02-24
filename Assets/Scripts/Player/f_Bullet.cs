@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class f_Bullet : MonoBehaviour
 {
 
     public float speed = 10f;
@@ -45,7 +45,6 @@ public class Bullet : MonoBehaviour
         }
 
         if(other.gameObject.tag == "Enemy") {
-            Debug.Log("Enemy confirmed");
             other.gameObject.GetComponent<EnemyAI>().KillMe();
         }
         Destroy(this.gameObject);

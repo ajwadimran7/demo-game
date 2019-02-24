@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1760638110554261803}
-  - component: {fileID: 2646234893337423981}
   - component: {fileID: 592563832971107871}
   - component: {fileID: 2900591798514980323}
   - component: {fileID: 5451669571440345264}
+  - component: {fileID: 2809094288337460447}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -36,24 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2646234893337423981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133080596836872795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02b374dd6fb11634e976589c7f54ac83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  fireRate: 4
-  MuzzlePrefab: {fileID: 1588768651426876007, guid: 9dc3cbf4733df854aad63c592f40a9fc,
-    type: 3}
-  HitPrefab: {fileID: 6044116192302956163, guid: 04a3d76493df990458c2c7eea157d05a,
-    type: 3}
 --- !u!65 &592563832971107871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62,7 +44,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133080596836872795}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.381882, y: 0.16283107, z: 0.22555375}
@@ -96,6 +78,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 10
+--- !u!114 &2809094288337460447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133080596836872795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c342c714cc8e4674486281c05b18a41e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  muzzleFlash: {fileID: 1588768651426876007, guid: 9dc3cbf4733df854aad63c592f40a9fc,
+    type: 3}
+  hitImpact: {fileID: 6044116192302956163, guid: 04a3d76493df990458c2c7eea157d05a,
+    type: 3}
 --- !u!1 &4752226044029565347
 GameObject:
   m_ObjectHideFlags: 0
